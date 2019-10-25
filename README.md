@@ -20,7 +20,7 @@ First make sure you have these programs:
 2. `feh` - simple program to set backgrounds and manipulate images
 3. `node` - because `hour-bg` is written in JavaScript
 4. `dunst` - to show notifications
-5. `cron` - to run this app in a loop (there can be use any similar program)
+5. `cron` - to run this app in a loop (there can be used any similar program)
 
 ### Installation
 
@@ -31,11 +31,10 @@ git clone https://github.com/Kyczan/hour-bg.git
 cd hour-bg
 ```
    
-2. Build locally and install this package globally by typing in terminal:
+1. Install this package globally by typing in terminal:
 
 ```sh
 npm i
-npm run build
 sudo npm install -g
 ```
 
@@ -43,7 +42,7 @@ Now you have command `hour-bg` available across all terminals.
 
 ### Usage
 
-First run of `hour-bg` will create config files under `$HOME/.config/hour-bg`.
+The first run of `hour-bg` will create config files under `$HOME/.config/hour-bg`.
 
 There is the place where you should do any customizations.
 
@@ -65,7 +64,7 @@ There is the place where you should do any customizations.
     +-walpaper4.jpeg
 ```
 
-Feel free to add new themes. Just copy `exodus`, add yours wallpapers and enhance `theme.config.json` accordingly.
+Feel free to add new themes. Just copy `exodus`, add yours wallpapers and enhance `theme-config.json` accordingly.
 
 You can have multiply themes. Just point in `config.json` which one you want to use.
 
