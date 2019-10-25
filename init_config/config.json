@@ -1,3 +1,4 @@
 {
-  "theme": "exodus"
+  "theme": "exodus",
+  "notify": true
 }

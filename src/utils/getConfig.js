@@ -12,15 +12,17 @@ function getConfig() {
     fs.copySync(srcPath, configPath);
   }
 
-  const { theme } = require(path.join(configPath, 'config.json'));
+  const { theme, notify } = require(path.join(configPath, 'config.json'));
   const { schedule } = require(path.join(
     configPath,
     `themes/${theme}/theme-config.json`
   ));
+  const themePath = path.join(configPath, 'themes', theme);
 
   return {
     schedule,
-    themePath: path.join(configPath, 'themes', theme)
+    themePath,
+    notify
   };
 }
 

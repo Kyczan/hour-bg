@@ -1,9 +1,7 @@
 const path = require('path');
 
-const getConfig = require('./getConfig');
-
-function newWallpaper() {
-  const { schedule, themePath } = getConfig();
+function newWallpaper(config) {
+  const { schedule, themePath } = config;
   const hour = new Date().getHours();
 
   // select wallpaper name
