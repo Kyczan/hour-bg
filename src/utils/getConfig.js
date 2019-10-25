@@ -7,7 +7,7 @@ function getConfig() {
 
   // create initial config if necessary under $HOME/.config/hour-bg
   if (!fs.existsSync(configPath)) {
-    const srcPath = path.join(__dirname, '../init_config');
+    const srcPath = path.join(__dirname, '../../init_config');
     fs.mkdirSync(configPath, { recursive: true });
     fs.copySync(srcPath, configPath);
   }
